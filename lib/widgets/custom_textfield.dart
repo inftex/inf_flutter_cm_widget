@@ -30,7 +30,7 @@ class CustomTextField extends StatefulWidget {
       required this.text,
       this.contenntPadding = const EdgeInsetsDirectional.all(8),
       this.hasBorder = true,
-      this.borderColor = Colors.black,
+      this.borderColor = Colors.grey,
       this.borderRadius = 4,
       this.borderWidth = 1,
       this.hintText = '',
@@ -87,7 +87,7 @@ class _CustomTextFieldState extends State<CustomTextField> with ThemeMixin {
           if (widget.label.isNotEmpty) ...[
             Row(
               children: [
-                Flexible(child: CustomTextField(text: widget.label)),
+                Flexible(child: CustomText(widget.label)),
                 if (widget.required) ...[
                   const SizedBox(width: 4),
                   CustomText(widget.requiredText, color: widget.requiredColor),

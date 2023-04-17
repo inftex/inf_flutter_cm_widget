@@ -70,16 +70,20 @@ class _MyHomePageState extends State<MyHomePage> with ThemeMixin {
         fontSize: fontSizeLarge,
         fontWeight: FontWeight.w500,
       ),
-      CustomTextField(
-        text: '',
-        hintText: 'hint here',
-        required: true,
-        onValidated: (v) {
-          if (v.isEmpty) {
-            return 'required field';
-          }
-          return '';
-        },
+      Padding(
+        padding: const EdgeInsetsDirectional.all(8),
+        child: CustomTextField(
+          label: 'Label',
+          text: '',
+          hintText: 'hint here',
+          required: true,
+          onValidated: (v) {
+            if (v.isEmpty) {
+              return 'Required field';
+            }
+            return '';
+          },
+        ),
       )
     ];
   }
