@@ -31,7 +31,7 @@ class CustomTextField extends StatefulWidget {
       this.contenntPadding = const EdgeInsetsDirectional.all(8),
       this.hasBorder = true,
       this.borderColor = Colors.grey,
-      this.borderRadius = 4,
+      this.borderRadius = 8,
       this.borderWidth = 1,
       this.hintText = '',
       this.hintColor,

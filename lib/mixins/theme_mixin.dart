@@ -19,4 +19,9 @@ mixin ThemeMixin on Object {
         fontSize: fontSizeRegular,
         color: Colors.black,
       );
+
+  ///
+  /// Color
+  ///
+  Color get colorPrimary => Colors.blue;
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inf_flutter_cm_widget/mixins/theme_mixin.dart';
+import 'package:inf_flutter_cm_widget/widgets/custom_button.dart';
 import 'package:inf_flutter_cm_widget/widgets/custom_text.dart';
 import 'package:inf_flutter_cm_widget/widgets/custom_textfield.dart';
 
@@ -48,6 +49,8 @@ class _MyHomePageState extends State<MyHomePage> with ThemeMixin {
             ...buildText(),
             const SizedBox(height: 16),
             ...buildTextField(),
+            const SizedBox(height: 16),
+            ...buildButton(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
@@ -63,12 +66,39 @@ class _MyHomePageState extends State<MyHomePage> with ThemeMixin {
     );
   }
 
+  List<Widget> buildButton() {
+    return [
+      CustomText(
+        'Button demo',
+        fontSize: fontSizeLarge,
+        fontWeight: FontWeight.w500,
+        textDecoration: TextDecoration.underline,
+      ),
+      const SizedBox(height: 16),
+      Center(
+        child: CustomButton(
+          text: 'Click me',
+          onPressed: () {},
+        ),
+      ),
+      const SizedBox(height: 16),
+      Center(
+        child: CustomButton(
+          text: 'Click me',
+          type: CustomButtonType.secondary,
+          onPressed: () {},
+        ),
+      ),
+    ];
+  }
+
   List<Widget> buildTextField() {
     return [
       CustomText(
         'TextField demo',
         fontSize: fontSizeLarge,
         fontWeight: FontWeight.w500,
+        textDecoration: TextDecoration.underline,
       ),
       Padding(
         padding: const EdgeInsetsDirectional.all(8),
@@ -94,6 +124,7 @@ class _MyHomePageState extends State<MyHomePage> with ThemeMixin {
         'Text demo',
         fontSize: fontSizeLarge,
         fontWeight: FontWeight.w500,
+        textDecoration: TextDecoration.underline,
       ),
       CustomText(
         'Text small',
