@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:inf_flutter_theme/theme.dart';
 
 mixin ThemeMixin on Object {
   ///
@@ -24,4 +23,27 @@ mixin ThemeMixin on Object {
   /// Color
   ///
   Color get colorPrimary => Colors.blue;
+}
+
+///
+/// Theme Data
+///
+final themDataLight = ThemeData(
+  /// Define the default brightness and colors.
+  brightness: Brightness.dark,
+  primaryColor: Colors.lightBlue[800],
+
+  /// Scaffold
+  scaffoldBackgroundColor: Colors.white,
+
+  /// Define the default font family.
+  fontFamily: FontFamily.sFProDisplay,
+);
+
+///
+/// Font
+///
+class FontFamily {
+  FontFamily._();
+  static const String sFProDisplay = 'SFProDisplay';
 }

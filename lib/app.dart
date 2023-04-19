@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:inf_flutter_cm_widget/demo/my_home_page.dart';
-import 'package:inf_flutter_theme/theme.dart';
+import 'package:inf_flutter_theme/mixins/theme_mixin.dart';
 
 ///
 /// This class creates the Material App
 /// Theme setup is here, view [ThemeMixin] for usage
 ///
-class RootApp extends StatelessWidget {
+class RootApp extends StatelessWidget with ThemeMixin {
   const RootApp({super.key});
 
   // This widget is the root of your application.
