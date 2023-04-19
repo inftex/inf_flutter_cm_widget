@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:inf_flutter_cm_widget/mixins/theme_mixin.dart';
-import 'package:inf_flutter_cm_widget/widgets/custom_button.dart';
-import 'package:inf_flutter_cm_widget/widgets/custom_text.dart';
-import 'package:inf_flutter_cm_widget/widgets/custom_textfield.dart';
+import 'package:inf_flutter_theme/mixins/theme_mixin.dart';
+import 'package:inf_flutter_theme/widgets/custom_button.dart';
+import 'package:inf_flutter_theme/widgets/custom_text.dart';
+import 'package:inf_flutter_theme/widgets/custom_textfield.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});

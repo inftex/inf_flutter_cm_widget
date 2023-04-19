@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inf_flutter_cm_widget/mixins/theme_mixin.dart';
+import '../mixins/theme_mixin.dart';
 
 class CustomText extends StatelessWidget with ThemeMixin {
   CustomText(this.text,

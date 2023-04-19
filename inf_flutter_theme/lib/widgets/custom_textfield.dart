@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:inf_flutter_cm_widget/mixins/theme_mixin.dart';
+import '../mixins/theme_mixin.dart';
 
 import 'custom_text.dart';
 

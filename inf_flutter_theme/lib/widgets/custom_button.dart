@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inf_flutter_cm_widget/widgets/custom_text.dart';
+import 'package:inf_flutter_theme/widgets/custom_text.dart';
 
 enum CustomButtonType {
   primary,

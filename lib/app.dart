@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inf_flutter_cm_widget/demo/my_home_page.dart';
-import 'package:inf_flutter_cm_widget/theme.dart';
+import 'package:inf_flutter_theme/theme.dart';
 
 ///
 /// This class creates the Material App
